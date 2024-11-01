@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+.gaegu-light {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.gaegu-regular {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gaegu-bold {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.main-header {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 62px;
+  text-align: center;
+}
+
+.pergi {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 62px;
+  text-align: center;
+}
+
+.alamat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-align: center;
+}
+
+.dress {
+  font-size: 32px;
+}
+
+.mam {
+  font-size: 32px;
+  position: absolute;
+  top: 22%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ketemu {
+  font-size: 48px;
+  /* display: none; */
+  position: absolute;
+  top: 22%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.image-1,
+.image-2 {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.image-1 {
+  width: 175px;
+}
+
+.image-2 {
+  width: 250px;
+}
+
+.image-3 {
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  
+}
+
+.image-4 {
+  width: 250px;
+  position: absolute;
+  top:65%;
+  left: 80%;
+}
+
+.btn {
+  position: absolute;
+  top: calc(100% - 5rem);
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background-color: #f8fafc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e2e8f0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes {
+  left: 50%;
+  transform: translateX(calc(-100% - 1rem));
+  z-index: 1;
+}
+
+.btn-no {
+  left: calc(50% + 1rem);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
