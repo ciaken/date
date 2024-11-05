@@ -31,19 +31,30 @@ body {
   padding: 2rem;
   width: 100%;
   min-height: 100vh;
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-image: url('./assets/osteriabg.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
   display: flex;
   flex-direction: column;
+}
+
+p{
+  color: white;
+}
+
+.tinted-box {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  padding: 2rem; 
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
   flex: 1;
   position: relative;
-  isolation: isolate;
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
+  width: 100%; /* Set the width to 90% of the viewport */
+  margin: 0 auto; /* Center the container */
 }
 
 .main-header {
@@ -77,25 +88,6 @@ body {
   font-size: 32px;
 }
 
-.mam {
-  font-size: 32px;
-  position: absolute;
-  top: 22%;
-  left: 13%;
-  transform: translate(-50%, -50%);
-  font-family: "Gaegu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ketemu {
-  font-size: 48px;
-  /* display: none; */
-  position: absolute;
-  top: 22%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-}
 
 .image-1,
 .image-2 {
@@ -113,23 +105,9 @@ body {
   width: 250px;
 }
 
-.image-3 {
-  width: 300px;
-  position: absolute;
-  top: 25%;
-  
-}
-
-.image-4 {
-  width: 250px;
-  position: absolute;
-  top:65%;
-  left: 80%;
-}
-
 .btn {
   position: absolute;
-  top: calc(100% - 5rem);
+  top: calc(100% - 14rem);
   min-width: 120px;
   padding: 0.75rem 1rem;
   font-size: 1.25rem;
