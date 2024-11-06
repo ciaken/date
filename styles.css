@@ -26,7 +26,6 @@
   font-style: normal;
 }
 
-
 body {
   padding: 2rem;
   width: 100%;
@@ -62,17 +61,18 @@ p{
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 62px;
+  font-size: 84px;
   text-align: center;
 }
 
-.pergi {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 62px;
-  text-align: center;
+.fraunces-main-header {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
 }
 
 .alamat {
@@ -82,18 +82,56 @@ p{
   transform: translate(-50%, -50%);
   font-size: 50px;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: .3s;
 }
 
-.dress {
+.alamat:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #BDA441,
+               0 0 20px #BDA441;
+}
+
+.fraunces-alamat {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.dress{
+  position: absolute;
+  top: 60%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
   font-size: 32px;
 }
 
+.click-no {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
 
 .image-1,
 .image-2 {
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -103,6 +141,10 @@ p{
 
 .image-2 {
   width: 250px;
+}
+
+.pin {
+  width: 48px;
 }
 
 .btn {
@@ -135,4 +177,66 @@ p{
   left: calc(50% + 1rem);
   transition: all 0.5s ease;
   z-index: 2;
+}
+
+dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  padding: 1rem 3rem;
+	background: white;
+	max-width: 600px;
+	padding-top: 2rem;
+	border-radius: 10px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgb(255 255 255 / 40%);
+		z-index: 2;
+		backdrop-filter: blur(10px);
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    color: black;
+    font-size: 2rem;
+    padding: 0.5rem 0;;
+  }
+  .x {
+		filter: grayscale(1);
+		border: none;
+		background: none;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		transition: ease filter, transform 0.3s;
+		cursor: pointer;
+		transform-origin: center;
+		&:hover {
+			filter: grayscale(0);
+			transform: scale(1.1);
+		}
+  }
+}
+
+.image-3 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
