@@ -33,8 +33,8 @@ btnNo.addEventListener("mouseover", (event) => {
   btnNo.style.left = Math.floor(newLeft) + "px";
 });
 
-btnYes.addEventListener("click", (e) => {
-  btnNo.classList.add("hide");
-  imageOne.classList.add("hide");
-  imageTwo.classList.remove("hide");
-});
+// btnYes.addEventListener("click", (e) => {
+  // btnNo.classList.add("hide");
+  // imageOne.classList.add("hide");
+  // imageTwo.classList.remove("hide");
+// });
