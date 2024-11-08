@@ -30,20 +30,20 @@ body {
   padding: 2rem;
   width: 100%;
   min-height: 100vh;
-  background-image: url('./assets/osteriabg.jpg'); /* Replace with your image path */
+  background-image: url("./assets/osteriabg.jpg"); /* Replace with your image path */
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
   display: flex;
   flex-direction: column;
 }
 
-p{
+p {
   color: white;
 }
 
 .tinted-box {
   background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  padding: 2rem; 
+  padding: 2rem;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -61,7 +61,7 @@ p{
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 84px;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -70,27 +70,24 @@ p{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 .alamat {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 42px;
   text-align: center;
   text-decoration: none;
   color: white;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .alamat:hover {
   color: #fff;
-  text-shadow: 0 0 10px #BDA441,
-               0 0 20px #BDA441;
+  text-shadow: 0 0 10px #bda441, 0 0 20px #bda441;
 }
 
 .fraunces-alamat {
@@ -98,15 +95,13 @@ p{
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
-.dress{
+.dress {
   position: absolute;
   top: 60%;
-  left: 50%;;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 32px;
 }
@@ -122,9 +117,7 @@ p{
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 .image-1,
@@ -149,7 +142,7 @@ p{
 
 .btn {
   position: absolute;
-  top: calc(100% - 14rem);
+  top: calc(100% - 11rem);
   min-width: 120px;
   padding: 0.75rem 1rem;
   font-size: 1.25rem;
@@ -182,21 +175,21 @@ p{
 dialog {
   position: absolute;
   top: 50%;
-  left: 50%;;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 3rem;
-	background: white;
-	max-width: 600px;
-	padding-top: 2rem;
-	border-radius: 10px;
-	border: 0;
-	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
-	animation: fadeIn 1s ease both;
-	&::backdrop {
-		animation: fadeIn 1s ease both;
-		background: rgb(255 255 255 / 40%);
-		z-index: 2;
-		backdrop-filter: blur(10px);
+  background: white;
+  max-width: 600px;
+  padding-top: 2rem;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+  &::backdrop {
+    animation: fadeIn 1s ease both;
+    background: rgb(255 255 255 / 40%);
+    z-index: 2;
+    backdrop-filter: blur(10px);
   }
   h2 {
     font-weight: 600;
@@ -206,22 +199,22 @@ dialog {
   p {
     color: black;
     font-size: 2rem;
-    padding: 0.5rem 0;;
+    padding: 0.5rem 0;
   }
   .x {
-		filter: grayscale(1);
-		border: none;
-		background: none;
-		position: absolute;
-		top: 15px;
-		right: 10px;
-		transition: ease filter, transform 0.3s;
-		cursor: pointer;
-		transform-origin: center;
-		&:hover {
-			filter: grayscale(0);
-			transform: scale(1.1);
-		}
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -233,10 +226,10 @@ dialog {
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
